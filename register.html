@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Create Account</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<style>
+
+/* BODY */
+
+body{
+
+margin:0;
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-family:Poppins;
+
+/* LIBRARY BACKGROUND */
+
+background:
+
+linear-gradient(
+
+rgba(0,0,0,.45),
+
+rgba(0,0,0,.45)
+
+),
+
+url("library_bg.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+
+/* GLASS CARD */
+
+.box{
+
+width:430px;
+
+padding:45px;
+
+border-radius:18px;
+
+background:
+
+rgba(255,255,255,.12);
+
+backdrop-filter: blur(15px);
+
+border:
+
+1px solid rgba(255,255,255,.3);
+
+box-shadow:
+
+0px 15px 45px rgba(0,0,0,.7);
+
+text-align:center;
+
+}
+
+
+/* TITLE */
+
+h2{
+
+font-family:'Playfair Display';
+
+font-size:34px;
+
+color:#ffd27f;
+
+margin-bottom:25px;
+
+}
+
+
+/* LABEL */
+
+label{
+
+display:block;
+
+text-align:left;
+
+margin-top:12px;
+
+font-size:14px;
+
+color:#ffe3a3;
+
+font-weight:600;
+
+}
+
+
+/* INPUTS */
+
+input,select{
+
+width:100%;
+
+padding:13px;
+
+margin-top:6px;
+
+border-radius:10px;
+
+border:none;
+
+outline:none;
+
+font-size:15px;
+
+background:
+
+rgba(255,255,255,.88);
+
+}
+
+
+/* BUTTON */
+
+button{
+
+width:100%;
+
+padding:14px;
+
+margin-top:18px;
+
+border:none;
+
+border-radius:10px;
+
+font-weight:600;
+
+font-size:16px;
+
+cursor:pointer;
+
+background:
+
+linear-gradient(
+
+135deg,
+
+#ffd54f,
+
+#ffb300
+
+);
+
+color:#3e2723;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+}
+
+
+/* LOGIN LINK */
+
+a{
+
+color:#ffd27f;
+
+font-weight:600;
+
+text-decoration:none;
+
+}
+
+a:hover{
+
+text-decoration:underline;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>Create Account</h2>
+
+<form action="register.php" method="POST">
+
+<label>
+
+Username
+
+</label>
+
+<input
+
+name="username"
+
+placeholder="Enter Your Name"
+
+required>
+
+<label>
+
+Password
+
+</label>
+
+<input
+
+type="password"
+
+name="password"
+
+placeholder="Create Password"
+
+required>
+
+<label>
+
+Role
+
+</label>
+
+<select name="role" required>
+
+<option value="">
+
+Select Role
+
+</option>
+
+<option value="student">
+
+Student
+
+</option>
+
+<option value="librarian">
+
+Librarian
+
+</option>
+
+<option value="management">
+
+Management
+
+</option>
+
+</select>
+
+<button type="submit">
+
+Register
+
+</button>
+
+</form>
+
+<br>
+
+<a href="login.html">
+
+Already have account? Login
+
+</a>
+
+</div>
+
+</body>
+
+</html>

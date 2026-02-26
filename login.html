@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Library Login</title>
+
+<link rel="stylesheet" href="transition.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<style>
+
+/* BODY */
+
+body{
+
+margin:0;
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-family:Poppins;
+
+/* SAME LIBRARY BACKGROUND */
+
+background:
+
+linear-gradient(
+
+rgba(0,0,0,.55),
+
+rgba(0,0,0,.55)
+
+),
+
+url("library_bg.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+/* LOGIN CARD */
+
+.login-box{
+
+width:420px;
+
+padding:50px;
+
+border-radius:18px;
+
+text-align:center;
+
+/* GLASS + LIBRARY THEME */
+
+background:
+
+linear-gradient(
+
+135deg,
+
+rgba(255,180,90,.85),
+
+rgba(140,70,20,.85)
+
+);
+
+backdrop-filter:blur(10px);
+
+box-shadow:
+
+0px 15px 45px rgba(0,0,0,.7);
+
+animation:fade .6s ease;
+
+}
+
+/* ANIMATION */
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* TITLE */
+
+h2{
+
+font-family:'Playfair Display';
+
+font-size:34px;
+
+color:#fff3cd;
+
+margin-bottom:25px;
+
+letter-spacing:1px;
+
+}
+
+/* INPUTS */
+
+input{
+
+width:95%;
+
+padding:13px;
+
+margin:12px 0;
+
+border-radius:10px;
+
+border:none;
+
+background:
+
+rgba(255,255,255,.25);
+
+color:white;
+
+font-size:15px;
+
+outline:none;
+
+}
+
+/* PLACEHOLDER */
+
+input::placeholder{
+
+color:#ffe6b3;
+
+}
+
+/* LOGIN BUTTON */
+
+button{
+
+width:100%;
+
+padding:14px;
+
+margin-top:10px;
+
+border:none;
+
+border-radius:10px;
+
+font-weight:600;
+
+font-size:16px;
+
+cursor:pointer;
+
+/* GOLD BUTTON */
+
+background:
+
+linear-gradient(
+
+135deg,
+
+#ffd54f,
+
+#ffb300
+
+);
+
+color:#3e2723;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+}
+
+/* REGISTER LINK */
+
+.register{
+
+margin-top:18px;
+
+}
+
+.register a{
+
+color:#fff3cd;
+
+font-weight:600;
+
+text-decoration:none;
+
+}
+
+.register a:hover{
+
+text-decoration:underline;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h2>
+
+Library Login
+
+</h2>
+
+<form action="login.php" method="POST">
+
+<input type="text"
+
+name="username"
+
+placeholder="Enter Username"
+
+required>
+
+<input type="password"
+
+name="password"
+
+placeholder="Enter Password"
+
+required>
+
+<button type="submit">
+
+Login
+
+</button>
+
+</form>
+
+<div class="register">
+
+<a href="register.html">
+
+New User? Create Account
+
+</a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
