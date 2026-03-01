@@ -297,7 +297,29 @@ echo "<option value='".$row['id']."'>"
 
 <label>Student Name</label>
 
-<input name="student" required>
+<select name="student" required>
+
+<?php
+
+$result=$conn->query(
+
+"SELECT username FROM users WHERE role='student'"
+
+);
+
+while($row=$result->fetch_assoc()){
+
+echo "<option value='".$row['username']."'>"
+
+.htmlspecialchars($row['username']).
+
+"</option>";
+
+}
+
+?>
+
+</select>
 
 <label>Due Date</label>
 
